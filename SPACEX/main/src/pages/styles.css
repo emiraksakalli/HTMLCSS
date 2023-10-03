@@ -1,0 +1,498 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Rubik:wght@400;500;600&display=swap');
+
+/* WEB */
+/* WEB */
+/* WEB */
+@media (min-width:1401px) and (max-width:1920px) {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        scroll-behavior: smooth;
+    }
+
+    body {
+        height: 100vh;
+        background-image: url('/main/images/space.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+
+    .backgroundimage {
+        height: 100vh;
+        background-image: url('/main/images/space.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+
+    /* HEADER */
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 25px;
+        opacity: 0;
+        transform: translateY(-170px);
+        animation: header 1s forwards ease-in-out;
+    }
+
+    @keyframes header {
+        to {
+            transform: translateY(0);
+            opacity: 100%;
+        }
+    }
+
+
+
+    .header-left #main {
+        font-family: 'Bebas Neue', sans-serif;
+        margin-left: 50px;
+        padding-left: 5px;
+        padding-right: 5px;
+        font-size: 50px;
+        background-color: rgba(0, 0, 0, 0.637);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 20px;
+        border: 1px solid white;
+        cursor: pointer;
+
+    }
+
+    .header-left #desc {
+        font-family: 'Bebas Neue', sans-serif;
+        margin-left: 50px;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    .header-right {
+        font-family: 'Rubik', sans-serif;
+        margin-right: 200px;
+        padding: 10px;
+        font-size: 30px;
+        background-color: rgba(0, 0, 0, 0.637);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 20px;
+        border: 1px solid white;
+        column-gap: 10px;
+
+
+    }
+
+
+
+    .header-right a {
+        text-decoration: none;
+    }
+
+    .header-right a:hover {
+        text-decoration: none;
+        transform: translateY(10px);
+        transition: all 0.5s ease;
+        cursor: pointer;
+    }
+
+    .header-right #gray {
+        color: gray;
+    }
+
+    .header-right #white {
+        color: white;
+    }
+
+    .header-left {
+        color: rgb(221, 221, 221);
+    }
+
+    /* HEADER END */
+
+    /* MAIN START */
+
+    .main-container {
+        font-family: 'Rubik', sans-serif;
+        width: 1000px;
+        height: 550px;
+        background-color: rgba(0, 0, 0, 0.637);
+        margin: auto;
+        margin-top: 50px;
+        border: 1px solid white;
+        border-radius: 50px;
+        opacity: 0;
+        transform: translateX(-1000px);
+        animation: main 1s forwards ease-in-out;
+        color: white;
+        padding: 25px;
+        transition: all 0.3s ease-in;
+    }
+
+    @keyframes main {
+        to {
+            transform: translateX(0);
+            opacity: 100%;
+        }
+    }
+
+    .main-container h1 {
+        font-size: 50px;
+    }
+
+    .main-container p {
+        margin-top: 50px;
+        font-size: 20px;
+    }
+
+    /* MAIN END */
+
+    /* FALCON9 START */
+
+    .falcon9 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+    }
+
+    .falcon9 #f9main {
+        margin-top: 300px;
+        font-family: 'Bebas Neue', sans-serif;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        -webkit-text-stroke-color: black;
+        -webkit-text-stroke-width: 1px;
+    }
+
+    .falcon9 #f9desc {
+        font-family: 'Bebas Neue', sans-serif;
+        font-size: 26px;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+
+    .falcon9-main .divider {
+        width: 100px;
+        height: 5px;
+        background-color: black;
+        animation: divider 2s forwards ease;
+
+    }
+
+    @keyframes divider {
+        to {
+            width: 500px;
+        }
+    }
+
+    /* FALCON9 END */
+}
+
+/* WEB */
+/* WEB */
+/* WEB */
+
+/* MOBILE */
+/* MOBILE */
+/* MOBILE */
+@media (min-width:100px) and (max-width:700px) {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        scroll-behavior: smooth;
+    }
+
+    body {
+        height: 100vh;
+        background-image: url('/main/images/space.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+
+    /* HEADER */
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 25px;
+        opacity: 0;
+        transform: translateY(-170px);
+        animation: header 1s forwards ease-in-out;
+    }
+
+    @keyframes header {
+        to {
+            transform: translateY(0);
+            opacity: 100%;
+        }
+    }
+
+
+
+    .header-left #main {
+        font-family: 'Bebas Neue', sans-serif;
+        margin-left: 10px;
+        padding-left: 5px;
+        padding-right: 5px;
+        font-size: 24px;
+        background-color: rgba(0, 0, 0, 0.637);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 20px;
+        border: 1px solid white;
+        cursor: pointer;
+
+    }
+
+    .header-left #desc {
+        font-family: 'Bebas Neue', sans-serif;
+        margin-left: 15px;
+        padding-left: 5px;
+        padding-right: 5px;
+        font-size: 10px;
+    }
+
+    .header-right {
+        font-family: 'Rubik', sans-serif;
+        padding: 10px;
+        font-size: 8px;
+        background-color: rgba(0, 0, 0, 0.637);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 20px;
+        border: 1px solid white;
+        column-gap: 3px;
+
+
+    }
+
+
+
+    .header-right a {
+        text-decoration: none;
+    }
+
+    .header-right a:hover {
+        text-decoration: none;
+        transform: translateY(10px);
+        transition: all 0.5s ease;
+        cursor: pointer;
+    }
+
+    .header-right #gray {
+        color: gray;
+    }
+
+    .header-right #white {
+        color: white;
+    }
+
+    .header-left {
+        color: rgb(221, 221, 221);
+    }
+
+    /* HEADER END */
+
+    /* MAIN START */
+
+    .main-container {
+        font-family: 'Rubik', sans-serif;
+        width: 350px;
+        height: 500px;
+        background-color: rgba(0, 0, 0, 0.637);
+        margin: auto;
+        margin-top: 50px;
+        border: 1px solid white;
+        border-radius: 50px;
+        opacity: 0;
+        transform: translateX(-1000px);
+        animation: main 1s forwards ease-in-out;
+        color: white;
+        padding: 25px;
+        transition: all 0.3s ease-in;
+    }
+
+    @keyframes main {
+        to {
+            transform: translateX(0);
+            opacity: 100%;
+        }
+    }
+
+    .main-container h1 {
+        font-size: 25px;
+    }
+
+    .main-container p {
+        margin-top: 50px;
+        font-size: 15px;
+    }
+
+    /* MAIN END */
+}
+
+/* MOBILE */
+/* MOBILE */
+/* MOBILE */
+
+/* TABLET */
+/* TABLET */
+/* TABLET */
+@media (min-width:701px) and (max-width:1400px) {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        scroll-behavior: smooth;
+    }
+
+    body {
+        height: 100vh;
+        background-image: url('/main/images/space.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+
+    /* HEADER */
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 25px;
+        opacity: 0;
+        transform: translateY(-170px);
+        animation: header 1s forwards ease-in-out;
+    }
+
+    @keyframes header {
+        to {
+            transform: translateY(0);
+            opacity: 100%;
+        }
+    }
+
+
+
+    .header-left #main {
+        font-family: 'Bebas Neue', sans-serif;
+        margin-left: 30px;
+        padding-left: 5px;
+        padding-right: 5px;
+        font-size: 36px;
+        background-color: rgba(0, 0, 0, 0.637);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 20px;
+        border: 1px solid white;
+        cursor: pointer;
+
+    }
+
+    .header-left #desc {
+        font-family: 'Bebas Neue', sans-serif;
+        margin-left: 30px;
+        padding-left: 5px;
+        padding-right: 5px;
+        font-size: 20px;
+    }
+
+    .header-right {
+        font-family: 'Rubik', sans-serif;
+        padding: 10px;
+        font-size: 12px;
+        background-color: rgba(0, 0, 0, 0.637);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 20px;
+        border: 1px solid white;
+        column-gap: 3px;
+
+
+    }
+
+
+
+    .header-right a {
+        text-decoration: none;
+    }
+
+    .header-right a:hover {
+        text-decoration: none;
+        transform: translateY(10px);
+        transition: all 0.5s ease;
+        cursor: pointer;
+    }
+
+    .header-right #gray {
+        color: gray;
+    }
+
+    .header-right #white {
+        color: white;
+    }
+
+    .header-left {
+        color: rgb(221, 221, 221);
+    }
+
+    /* HEADER END */
+
+    /* MAIN START */
+
+    .main-container {
+        font-family: 'Rubik', sans-serif;
+        width: 500px;
+        height: 370px;
+        background-color: rgba(0, 0, 0, 0.637);
+        margin: auto;
+        margin-top: 80px;
+        border: 1px solid white;
+        border-radius: 50px;
+        opacity: 0;
+        transform: translateX(-1000px);
+        animation: main 1s forwards ease-in-out;
+        color: white;
+        padding: 25px;
+        transition: all 0.3s ease-in;
+    }
+
+    @keyframes main {
+        to {
+            transform: translateX(0);
+            opacity: 100%;
+        }
+    }
+
+    .main-container h1 {
+        font-size: 25px;
+    }
+
+    .main-container p {
+        margin-top: 50px;
+        font-size: 15px;
+    }
+
+    /* MAIN END */
+}
+
+/* TABLET */
+/* TABLET */
+/* TABLET */
